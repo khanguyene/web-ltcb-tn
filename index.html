@@ -865,7 +865,590 @@ for (int i = 1; i &lt;= 5; i += 2) {
     <label class="option"><input type="radio" name="q100" value="C"> Xóa màn hình kết quả</label>
     <label class="option"><input type="radio" name="q100" value="D"> Kết thúc hàm main()</label>
 </div>
+<div class="question" data-answer="C">
+    <h3>Câu 101: Cho đoạn mã sau, màn hình sẽ hiển thị kết quả là bao nhiêu?<br>
+    <pre><code>int x = 5;
+int y = ++x * 2;
+printf("x=%d, y=%d", x, y);</code></pre></h3>
+    <label class="option"><input type="radio" name="q101" value="A"> x=5, y=10</label>
+    <label class="option"><input type="radio" name="q101" value="B"> x=6, y=10</label>
+    <label class="option"><input type="radio" name="q101" value="C"> x=6, y=12</label>
+    <label class="option"><input type="radio" name="q101" value="D"> x=5, y=12</label>
+</div>
 
+<div class="question" data-answer="B">
+    <h3>Câu 102: Cho đoạn mã sau, màn hình sẽ hiển thị kết quả là bao nhiêu?<br>
+    <pre><code>int a = 10, b = 20;
+int max = (a > b) ? a : b;
+printf("%d", max);</code></pre></h3>
+    <label class="option"><input type="radio" name="q102" value="A"> 10</label>
+    <label class="option"><input type="radio" name="q102" value="B"> 20</label>
+    <label class="option"><input type="radio" name="q102" value="C"> 30</label>
+    <label class="option"><input type="radio" name="q102" value="D"> 0</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 103: Đoạn mã sau đây sẽ xuất ra màn hình kết quả gì?<br>
+    <pre><code>int n = 0;
+if (n)
+    printf("True");
+else
+    printf("False");</code></pre></h3>
+    <label class="option"><input type="radio" name="q103" value="A"> True</label>
+    <label class="option"><input type="radio" name="q103" value="B"> False</label>
+    <label class="option"><input type="radio" name="q103" value="C"> Không in ra gì cả</label>
+    <label class="option"><input type="radio" name="q103" value="D"> Báo lỗi biên dịch</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 104: Giá trị của biến count sau khi thực hiện đoạn mã dưới đây là bao nhiêu?<br>
+    <pre><code>int count = 0;
+int i;
+for (i = 1; i &lt;= 5; i++) {
+    if (i % 2 == 0) {
+        count++;
+    }
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q104" value="A"> 1</label>
+    <label class="option"><input type="radio" name="q104" value="B"> 2</label>
+    <label class="option"><input type="radio" name="q104" value="C"> 3</label>
+    <label class="option"><input type="radio" name="q104" value="D"> 5</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 105: Đoạn mã sau đây bị lỗi biên dịch vì lý do nào?<br>
+    <pre><code>int x = 10;
+switch (x) {
+    case 5: printf("Năm"); break;
+    case 5: printf("Năm nữa"); break;
+    default: printf("Khác");
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q105" value="A"> Không có câu lệnh break ở nhánh default</label>
+    <label class="option"><input type="radio" name="q105" value="B"> Trùng lặp giá trị nhãn hằng số 'case 5'</label>
+    <label class="option"><input type="radio" name="q105" value="C"> Biến x không được phép đưa vào switch</label>
+    <label class="option"><input type="radio" name="q105" value="D"> Thiếu dấu chấm phẩy sau từ khóa default</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 106: Biểu thức điều kiện sau đây trả về giá trị logic nào (Đúng/Sai)?<br>
+    <pre><code>int a = 5, b = 8, c = 12;
+int kq = (a &lt; b &amp;&amp; b &gt; c);</code></pre></h3>
+    <label class="option"><input type="radio" name="q106" value="A"> kq = 1 (Đúng)</label>
+    <label class="option"><input type="radio" name="q106" value="B"> kq = 0 (Sai)</label>
+    <label class="option"><input type="radio" name="q106" value="C"> kq = 5</label>
+    <label class="option"><input type="radio" name="q106" value="D"> Báo lỗi cú pháp phép toán</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 107: Kết quả hiển thị của đoạn mã lặp while sau đây là gì?<br>
+    <pre><code>int i = 10;
+while (i &gt; 7) {
+    printf("%d ", i);
+    i -= 2;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q107" value="A"> 10 8 6</label>
+    <label class="option"><input type="radio" name="q107" value="B"> 10 9 8 7</label>
+    <label class="option"><input type="radio" name="q107" value="C"> 10 8 </label>
+    <label class="option"><input type="radio" name="q107" value="D"> Vòng lặp vô hạn</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 108: Đoạn code sau sẽ xuất ra màn hình kết quả nào?<br>
+    <pre><code>int s = 0;
+int i = 1;
+do {
+    s += i;
+    i++;
+} while (i &lt;= 3);
+printf("%d", s);</code></pre></h3>
+    <label class="option"><input type="radio" name="q108" value="A"> 1</label>
+    <label class="option"><input type="radio" name="q108" value="B"> 3</label>
+    <label class="option"><input type="radio" name="q108" value="C"> 6</label>
+    <label class="option"><input type="radio" name="q108" value="D"> 10</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 109: Lệnh xuất dữ liệu sau đây sẽ hiển thị số thực với giá trị làm tròn nào?<br>
+    <pre><code>float s = 5.6789;
+printf("%.2f", s);</code></pre></h3>
+    <label class="option"><input type="radio" name="q109" value="A"> 5.67</label>
+    <label class="option"><input type="radio" name="q109" value="B"> 5.68</label>
+    <label class="option"><input type="radio" name="q109" value="C"> 5.7</label>
+    <label class="option"><input type="radio" name="q109" value="D"> 5.6789</label>
+</div>
+
+<div class="question" data-answer="A">
+    <h3>Câu 110: Cho đoạn code sau, hãy tính giá trị biến z sau khi kết thúc câu lệnh:<br>
+    <pre><code>int x = 4, y = 3;
+int z = x * y + x / y;</code></pre></h3>
+    <label class="option"><input type="radio" name="q110" value="A"> 13</label>
+    <label class="option"><input type="radio" name="q110" value="B"> 13.33</label>
+    <label class="option"><input type="radio" name="q110" value="C"> 14</label>
+    <label class="option"><input type="radio" name="q110" value="D"> 12</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 111: Cho hàm TinhTong sau đây. Lời gọi hàm nào trong main là ĐÚNG cú pháp?<br>
+    <pre><code>int TinhTong(int a, int b) {
+    return a + b;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q111" value="A"> int kq = TinhTong(5);</label>
+    <label class="option"><input type="radio" name="q111" value="B"> TinhTong(int 5, int 10);</label>
+    <label class="option"><input type="radio" name="q111" value="C"> int kq = TinhTong(5, 10);</label>
+    <label class="option"><input type="radio" name="q111" value="D"> void kq = TinhTong(5, 10);</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 112: Kết quả của chương trình sau khi thực hiện xong hàm main là gì?<br>
+    <pre><code>void ThongBao() {
+    printf("Hello ");
+}
+int main() {
+    ThongBao();
+    ThongBao();
+    return 0;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q112" value="A"> Hello </label>
+    <label class="option"><input type="radio" name="q112" value="B"> Hello Hello </label>
+    <label class="option"><input type="radio" name="q112" value="C"> Không xuất ra màn hình nội dung nào</label>
+    <label class="option"><input type="radio" name="q112" value="D"> Báo lỗi biên dịch</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 113: Cho đoạn chương trình sau, màn hình hiển thị kết quả bao nhiêu?<br>
+    <pre><code>int BinhPhuong(int x) {
+    return x * x;
+}
+int main() {
+    int a = 3;
+    printf("%d", BinhPhuong(a + 1));
+    return 0;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q113" value="A"> 9</label>
+    <label class="option"><input type="radio" name="q113" value="B"> 10</label>
+    <label class="option"><input type="radio" name="q113" value="C"> 16</label>
+    <label class="option"><input type="radio" name="q113" value="D"> 4</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 114: Hàm sau đây trả về giá trị nào khi ta gọi KiemTra(7);?<br>
+    <pre><code>int KiemTra(int n) {
+    if (n % 2 == 0)
+        return 1;
+    return 0;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q114" value="A"> 1</label>
+    <label class="option"><input type="radio" name="q114" value="B"> 0</label>
+    <label class="option"><input type="radio" name="q114" value="C"> 7</label>
+    <label class="option"><input type="radio" name="q114" value="D"> Không trả về gì cả</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 115: Khai báo Prototype nào dưới đây phù hợp với định nghĩa của hàm sau?<br>
+    <pre><code>float TimMax(float x, float y) {
+    if(x &gt; y) return x;
+    else return y;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q115" value="A"> void TimMax(float, float);</label>
+    <label class="option"><input type="radio" name="q115" value="B"> int TimMax(float x, float y);</label>
+    <label class="option"><input type="radio" name="q115" value="C"> float TimMax(float, float);</label>
+    <label class="option"><input type="radio" name="q115" value="D"> TimMax(float x, float y);</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 116: Khai báo mảng nào sau đây bị LỖI cú pháp biên dịch trong tiêu chuẩn C căn bản?<br>
+    <pre><code>int n = 5;</code></pre></h3>
+    <label class="option"><input type="radio" name="q116" value="A"> int a[10];</label>
+    <label class="option"><input type="radio" name="q116" value="B"> float b[] = {1.2, 2.3, 3.4};</label>
+    <label class="option"><input type="radio" name="q116" value="C"> int c[n];</label>
+    <label class="option"><input type="radio" name="q116" value="D"> char d[20] = "Hello";</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 117: Cho đoạn mã sau, phần tử A[2] sẽ nhận giá trị khởi tạo bằng bao nhiêu?<br>
+    <pre><code>int A[5] = {10, 20};</code></pre></h3>
+    <label class="option"><input type="radio" name="q117" value="A"> 10</label>
+    <label class="option"><input type="radio" name="q117" value="B"> 20</label>
+    <label class="option"><input type="radio" name="q117" value="C"> 0</label>
+    <label class="option"><input type="radio" name="q117" value="D"> Giá trị rác ngẫu nhiên</label>
+</div>
+
+<div class="question" data-answer="D">
+    <h3>Câu 118: Đoạn chương trình sau thực hiện công việc gì trên mảng M?<br>
+    <pre><code>int M[5] = {2, -4, 6, -8, 10};
+int s = 0, i;
+for(i = 0; i &lt; 5; i++) {
+    if(M[i] &gt; 0) s += M[i];
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q118" value="A"> Tính tổng các phần tử âm trong mảng</label>
+    <label class="option"><input type="radio" name="q118" value="B"> Tính tổng tất cả các phần tử có trong mảng M</label>
+    <label class="option"><input type="radio" name="q118" value="C"> Đếm số lượng phần tử dương trong mảng</label>
+    <label class="option"><input type="radio" name="q118" value="D"> Tính tổng các phần tử dương trong mảng M</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 119: Cho đoạn mã sau, biến S nhận giá trị cuối cùng là bao nhiêu?<br>
+    <pre><code>int M[4] = {1, 3, 5, 7};
+int S = M[0] * M[3];</code></pre></h3>
+    <label class="option"><input type="radio" name="q119" value="A"> 3</label>
+    <label class="option"><input type="radio" name="q119" value="B"> 7</label>
+    <label class="option"><input type="radio" name="q119" value="C"> 15</label>
+    <label class="option"><input type="radio" name="q119" value="D"> 35</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 120: Đoạn code sau đây thực hiện chức năng gì?<br>
+    <pre><code>int arr[4] = {12, 45, 8, 23};
+int val = arr[0], i;
+for(i = 1; i &lt; 4; i++) {
+    if(arr[i] &lt; val) val = arr[i];
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q120" value="A"> Tìm phần tử lớn nhất trong mảng arr</label>
+    <label class="option"><input type="radio" name="q120" value="B"> Tìm phần tử nhỏ nhất trong mảng arr</label>
+    <label class="option"><input type="radio" name="q120" value="C"> Tính trung bình cộng của mảng</label>
+    <label class="option"><input type="radio" name="q120" value="D"> Sắp xếp mảng tăng dần</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 121: Đoạn mã duyệt mảng hai chiều sau đây xuất dữ liệu ra màn hình theo cấu trúc nào?<br>
+    <pre><code>int MaTran[2][3] = {{1,2,3}, {4,5,6}};
+int i, j;
+for(i = 0; i &lt; 2; i++) {
+    for(j = 0; j &lt; 3; j++) {
+        printf("%d ", MaTran[i][j]);
+    }
+    printf("\n");
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q121" value="A"> In ra tất cả các số trên cùng một hàng ngang duy nhất</label>
+    <label class="option"><input type="radio" name="q121" value="B"> In dữ liệu dạng lưới gồm 2 hàng và 3 cột</label>
+    <label class="option"><input type="radio" name="q121" value="C"> In dữ liệu dạng lưới gồm 3 hàng và 2 cột</label>
+    <label class="option"><input type="radio" name="q121" value="D"> Báo lỗi cú pháp in mảng hai chiều</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 122: Cho đoạn mã sau, giá trị được in ra màn hình là bao nhiêu?<br>
+    <pre><code>int x = 7;
+int *p = &amp;x;
+printf("%d", *p + 3);</code></pre></h3>
+    <label class="option"><input type="radio" name="q122" value="A"> 7</label>
+    <label class="option"><input type="radio" name="q122" value="B"> 10</label>
+    <label class="option"><input type="radio" name="q122" value="C"> Địa chỉ ô nhớ cộng thêm 3</label>
+    <label class="option"><input type="radio" name="q122" value="D"> Báo lỗi vùng nhớ</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 123: Khai báo và gán giá trị con trỏ nào sau đây là SAI cú pháp?<br>
+    <pre><code>int a = 5;
+float b = 4.5;</code></pre></h3>
+    <label class="option"><input type="radio" name="q123" value="A"> int *p = &amp;a;</label>
+    <label class="option"><input type="radio" name="q123" value="B"> float *q = &amp;b;</label>
+    <label class="option"><input type="radio" name="q123" value="C"> int *p = a;</label>
+    <label class="option"><input type="radio" name="q123" value="D"> int *p = NULL;</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 124: Màn hình hiển thị giá trị bao nhiêu sau khi thực hiện đoạn mã này?<br>
+    <pre><code>int a = 15, b = 25;
+int *p = &amp;a;
+p = &amp;b;
+printf("%d", *p);</code></pre></h3>
+    <label class="option"><input type="radio" name="q124" value="A"> 15</label>
+    <label class="option"><input type="radio" name="q124" value="B"> 25</label>
+    <label class="option"><input type="radio" name="q124" value="C"> Địa chỉ của biến a</label>
+    <label class="option"><input type="radio" name="q124" value="D"> Địa chỉ của biến b</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 125: Đoạn mã sau áp dụng cơ chế truyền con trỏ, giá trị của biến n thay đổi thế nào?<br>
+    <pre><code>void TangGiaTri(int *x) {
+    *x = *x + 5;
+}
+int main() {
+    int n = 10;
+    TangGiaTri(&amp;n);
+    printf("%d", n);
+    return 0;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q125" value="A"> 10</label>
+    <label class="option"><input type="radio" name="q125" value="B"> 5</label>
+    <label class="option"><input type="radio" name="q125" value="C"> 15</label>
+    <label class="option"><input type="radio" name="q125" value="D"> Báo lỗi hàm</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 126: Tên của một mảng trong ngôn ngữ C thực chất là một hằng con trỏ trỏ vào vị trí nào?<br>
+    <pre><code>int arr[5] = {1, 2, 3, 4, 5};</code></pre></h3>
+    <label class="option"><input type="radio" name="q126" value="A"> Trỏ vào phần tử cuối cùng arr[4]</label>
+    <label class="option"><input type="radio" name="q126" value="B"> Trỏ vào phần tử đầu tiên arr[0]</label>
+    <label class="option"><input type="radio" name="q126" value="C"> Trỏ vào độ dài của mảng</label>
+    <label class="option"><input type="radio" name="q126" value="D"> Không trỏ vào đâu cả</label>
+</div>
+
+<div class="question" data-answer="A">
+    <h3>Câu 127: Biểu thức toán tử con trỏ nào dưới đây tương đương hoàn toàn với phần tử mảng arr[2]?<br>
+    <pre><code>int arr[5] = {10, 20, 30, 40, 50};
+int *p = arr;</code></pre></h3>
+    <label class="option"><input type="radio" name="q127" value="A"> *(p + 2)</label>
+    <label class="option"><input type="radio" name="q127" value="B"> *p + 2</label>
+    <label class="option"><input type="radio" name="q127" value="C"> p + 2</label>
+    <label class="option"><input type="radio" name="q127" value="D"> &amp;p[2]</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 128: Hãy chọn câu lệnh cấp phát động vùng nhớ ĐÚNG cú pháp cho mảng số nguyên gồm 10 phần tử bằng hàm malloc:<br>
+    <pre><code>int *p;</code></pre></h3>
+    <label class="option"><input type="radio" name="q128" value="A"> p = malloc(10);</label>
+    <label class="option"><input type="radio" name="q128" value="B"> p = (int) malloc(10 * sizeof(int));</label>
+    <label class="option"><input type="radio" name="q128" value="C"> p = (int *) malloc(10 * sizeof(int));</label>
+    <label class="option"><input type="radio" name="q128" value="D"> p = calloc(10);</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 129: Đoạn mã giải phóng bộ nhớ động nào dưới đây là hoàn chỉnh và an toàn trong C?<br>
+    <pre><code>int *ptr = (int *)malloc(5 * sizeof(int));
+// Thực hiện xử lý...</code></pre></h3>
+    <label class="option"><input type="radio" name="q129" value="A"> delete ptr;</label>
+    <label class="option"><input type="radio" name="q129" value="B"> free(ptr); ptr = NULL;</label>
+    <label class="option"><input type="radio" name="q129" value="C"> clear(ptr);</label>
+    <label class="option"><input type="radio" name="q129" value="D"> ptr.free();</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 130: Ký tự tự động kết thúc chuỗi '\0' có tên gọi là gì theo giáo trình định nghĩa?</h3>
+    <label class="option"><input type="radio" name="q130" value="A"> Ký tự Space</label>
+    <label class="option"><input type="radio" name="q130" value="B"> Ký tự Null</label>
+    <label class="option"><input type="radio" name="q130" value="C"> Ký tự Newline</label>
+    <label class="option"><input type="radio" name="q130" value="D"> Ký tự Tab</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 131: Cho đoạn mã sau, hàm strcpy thực hiện công việc gì?<br>
+    <pre><code>char s1[20];
+char s2[] = "LapTrinh";
+strcpy(s1, s2);</code></pre></h3>
+    <label class="option"><input type="radio" name="q131" value="A"> Nối chuỗi s2 vào sau chuỗi s1</label>
+    <label class="option"><input type="radio" name="q131" value="B"> Sao chép nội dung chuỗi s2 sang chuỗi s1</label>
+    <label class="option"><input type="radio" name="q131" value="C"> Tính độ dài chuỗi s2</label>
+    <label class="option"><input type="radio" name="q131" value="D"> So sánh hai chuỗi s1 và s2</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 132: Cho đoạn mã sau, giá trị của biến kq nhận được là bao nhiêu?<br>
+    <pre><code>char str1[] = "abc";
+char str2[] = "abc";
+int kq = strcmp(str1, str2);</code></pre></h3>
+    <label class="option"><input type="radio" name="q132" value="A"> 1</label>
+    <label class="option"><input type="radio" name="q132" value="B"> -1</label>
+    <label class="option"><input type="radio" name="q132" value="C"> 0</label>
+    <label class="option"><input type="radio" name="q132" value="D"> 2</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 133: Định nghĩa cấu trúc sau đây mô tả một thực thể Sinh viên. Trường DiemTB chiếm bộ nhớ thuộc kiểu gì?<br>
+    <pre><code>struct Student {
+    char Name[50];
+    float DiemTB;
+};</code></pre></h3>
+    <label class="option"><input type="radio" name="q133" value="A"> Kiểu số nguyên</label>
+    <label class="option"><input type="radio" name="q133" value="B"> Kiểu mảng ký tự</label>
+    <label class="option"><input type="radio" name="q133" value="C"> Kiểu số thực (float)</label>
+    <label class="option"><input type="radio" name="q133" value="D"> Kiểu con trỏ cấu trúc</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 134: Lệnh gán giá trị nào sau đây hợp lệ cho trường x của biến cấu trúc p1?<br>
+    <pre><code>struct Point {
+    int x;
+    int y;
+};
+struct Point p1;</code></pre></h3>
+    <label class="option"><input type="radio" name="q134" value="A"> p1-&gt;x = 10;</label>
+    <label class="option"><input type="radio" name="q134" value="B"> Point.x = 10;</label>
+    <label class="option"><input type="radio" name="q134" value="C"> p1.x = 10;</label>
+    <label class="option"><input type="radio" name="q134" value="D"> p1(x) = 10;</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 135: Định nghĩa kiểu dữ liệu bằng từ khóa typedef sau đây cho phép ta khai báo biến như thế nào?<br>
+    <pre><code>typedef struct {
+    int Ngay;
+    int Thang;
+    int Nam;
+} DATE;</code></pre></h3>
+    <label class="option"><input type="radio" name="q135" value="A"> struct DATE today;</label>
+    <label class="option"><input type="radio" name="q135" value="B"> DATE today;</label>
+    <label class="option"><input type="radio" name="q135" value="C"> int DATE today;</label>
+    <label class="option"><input type="radio" name="q135" value="D"> void DATE today;</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 136: Cho đoạn mã sau, màn hình hiển thị giá trị bao nhiêu?<br>
+    <pre><code>int a = 5, b = 2;
+float kq = (float)a / b;
+printf("%.1f", kq);</code></pre></h3>
+    <label class="option"><input type="radio" name="q136" value="A"> 2.0</label>
+    <label class="option"><input type="radio" name="q136" value="B"> 2.5</label>
+    <label class="option"><input type="radio" name="q136" value="C"> 2</label>
+    <label class="option"><input type="radio" name="q136" value="D"> 3.0</label>
+</div>
+
+<div class="question" data-answer="D">
+    <h3>Câu 137: Vòng lặp lồng nhau sau đây sẽ xuất ra màn hình bao nhiêu dấu sao (*)?<br>
+    <pre><code>int i, j;
+for(i = 0; i &lt; 2; i++) {
+    for(j = 0; j &lt; 3; j++) {
+        printf("*");
+    }
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q137" value="A"> 2</label>
+    <label class="option"><input type="radio" name="q137" value="B"> 3</label>
+    <label class="option"><input type="radio" name="q137" value="C"> 5</label>
+    <label class="option"><input type="radio" name="q137" value="D"> 6</label>
+</div>
+
+<div class="question" data-answer="A">
+    <h3>Câu 138: Kết quả trả về của hàm Tim dưới đây khi truyền đối số Tim(12); là gì?<br>
+    <pre><code>int Tim(int n) {
+    if (n &gt; 10) return 100;
+    if (n &gt; 5) return 50;
+    return 0;
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q138" value="A"> 100</label>
+    <label class="option"><input type="radio" name="q138" value="B"> 50</label>
+    <label class="option"><input type="radio" name="q138" value="C"> 0</label>
+    <label class="option"><input type="radio" name="q138" value="D"> 150</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 139: Biến mảng M sau đây chiếm tổng cộng bao nhiêu bytes trong bộ nhớ (Biết hệ thống quy định 1 phần tử kiểu int = 2 bytes)?<br>
+    <pre><code>int M[10];</code></pre></h3>
+    <label class="option"><input type="radio" name="q139" value="A"> 10 bytes</label>
+    <label class="option"><input type="radio" name="q139" value="B"> 20 bytes</label>
+    <label class="option"><input type="radio" name="q139" value="C"> 40 bytes</label>
+    <label class="option"><input type="radio" name="q139" value="D"> 80 bytes</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 140: Hàm printf trong đoạn mã sau sẽ xuất ra ký tự nào?<br>
+    <pre><code>char s[] = "C-Language";
+printf("%c", s[2]);</code></pre></h3>
+    <label class="option"><input type="radio" name="q140" value="A"> C</label>
+    <label class="option"><input type="radio" name="q140" value="B"> -</label>
+    <label class="option"><input type="radio" name="q140" value="C"> L</label>
+    <label class="option"><input type="radio" name="q140" value="D"> a</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 141: Cho đoạn mã con trỏ sau, màn hình sẽ hiển thị kết quả bao nhiêu?<br>
+    <pre><code>int x = 40;
+int *p = &amp;x;
+*p = *p + 20;
+printf("%d", x);</code></pre></h3>
+    <label class="option"><input type="radio" name="q141" value="A"> 40</label>
+    <label class="option"><input type="radio" name="q141" value="B"> 20</label>
+    <label class="option"><input type="radio" name="q141" value="C"> 60</label>
+    <label class="option"><input type="radio" name="q141" value="D"> Báo lỗi biên dịch</label>
+</div>
+
+<div class="question" data-answer="A">
+    <h3>Câu 142: Cho biết kết quả chạy của đoạn mã toán tử logic và rẽ nhánh dưới đây:<br>
+    <pre><code>int x = 5, y = 10;
+if (x &gt; 0 || y &lt; 0) {
+    printf("Thỏa mãn");
+} else {
+    printf("Không thỏa mãn");
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q142" value="A"> Thỏa mãn</label>
+    <label class="option"><input type="radio" name="q142" value="B"> Không thỏa mãn</label>
+    <label class="option"><input type="radio" name="q142" value="C"> Chương trình chạy vô hạn</label>
+    <label class="option"><input type="radio" name="q142" value="D"> Lỗi cú pháp câu lệnh toán tử</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 143: Sau khi thực hiện xong vòng lặp sau, biến i có giá trị kết thúc là bao nhiêu?<br>
+    <pre><code>int i;
+for (i = 0; i &lt; 4; i++) {
+    // Thân vòng lặp rỗng
+}</code></pre></h3>
+    <label class="option"><input type="radio" name="q143" value="A"> 3</label>
+    <label class="option"><input type="radio" name="q143" value="B"> 4</label>
+    <label class="option"><input type="radio" name="q143" value="C"> 5</label>
+    <label class="option"><input type="radio" name="q143" value="D"> 0</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 144: Đoạn mã sau đây in ra màn hình tổng của các số nào?<br>
+    <pre><code>int sum = 0, i;
+for (i = 1; i &lt;= 5; i++) {
+    if (i == 3) break;
+    sum += i;
+}
+printf("%d", sum);</code></pre></h3>
+    <label class="option"><input type="radio" name="q144" value="A"> Tổng từ 1 đến 5</label>
+    <label class="option"><input type="radio" name="q144" value="B"> Tổng của số 1 và số 2</label>
+    <label class="option"><input type="radio" name="q144" value="C"> Tổng của số 1, 2, 4, 5</label>
+    <label class="option"><input type="radio" name="q144" value="D"> 0</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 145: Cho chuỗi khai báo sau, hàm strcat thực hiện hành động nào?<br>
+    <pre><code>char s1[30] = "Hello ";
+char s2[] = "World";
+strcat(s1, s2);</code></pre></h3>
+    <label class="option"><input type="radio" name="q145" value="A"> Đo độ dài chuỗi s1</label>
+    <label class="option"><input type="radio" name="q145" value="B"> Xóa ký tự trắng của chuỗi s1</label>
+    <label class="option"><input type="radio" name="q145" value="C"> Ghép (nối) chuỗi s2 vào sau chuỗi s1</label>
+    <label class="option"><input type="radio" name="q145" value="D"> Sao chép chuỗi s2 vào đè hoàn toàn chuỗi s1</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 146: Kết quả xuất ra màn hình của đoạn chương trình mảng kết hợp con trỏ sau đây là gì?<br>
+    <pre><code>int A[] = {5, 10, 15, 20};
+int *p = &amp;A[1];
+printf("%d", *(p + 2));</code></pre></h3>
+    <label class="option"><input type="radio" name="q146" value="A"> 10</label>
+    <label class="option"><input type="radio" name="q146" value="B"> 15</label>
+    <label class="option"><input type="radio" name="q146" value="C"> 20</label>
+    <label class="option"><input type="radio" name="q146" value="D"> Giá trị rác</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 147: Trong các khai báo hằng số sau đây, khai báo nào SAI cú pháp quy định của ngôn ngữ C?<br>
+    <pre><code>// Khảo sát cú pháp định nghĩa hằng</code></pre></h3>
+    <label class="option"><input type="radio" name="q147" value="A"> #define MAX 100</label>
+    <label class="option"><input type="radio" name="q147" value="B"> const int MAX = 100;</label>
+    <label class="option"><input type="radio" name="q147" value="C"> #define MAX = 100;</label>
+    <label class="option"><input type="radio" name="q147" value="D"> const float PI = 3.14;</label>
+</div>
+
+<div class="question" data-answer="C">
+    <h3>Câu 148: Hàm scanf sau đây nhận định dạng dữ liệu kiểu gì nhập từ bàn phím?<br>
+    <pre><code>char ch;
+scanf("%c", &amp;ch);</code></pre></h3>
+    <label class="option"><input type="radio" name="q148" value="A"> Số nguyên</label>
+    <label class="option"><input type="radio" name="q148" value="B"> Số thực</label>
+    <label class="option"><input type="radio" name="q148" value="C"> Một ký tự duy nhất</label>
+    <label class="option"><input type="radio" name="q148" value="D"> Chuỗi ký tự</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 149: Cho đoạn mã sau, màn hình hiển thị kết quả tính toán số dư bằng bao nhiêu?<br>
+    <pre><code>int a = 14, b = 4;
+printf("%d", a % b);</code></pre></h3>
+    <label class="option"><input type="radio" name="q149" value="A"> 3</label>
+    <label class="option"><input type="radio" name="q149" value="B"> 2</label>
+    <label class="option"><input type="radio" name="q149" value="C"> 3.5</label>
+    <label class="option"><input type="radio" name="q149" value="D"> 0</label>
+</div>
+
+<div class="question" data-answer="B">
+    <h3>Câu 150: Đoạn lệnh chuẩn nào sau đây được dùng để xóa toàn bộ vùng đệm tiêu chuẩn stdin trước khi xử lý nhập văn bản?<br>
+    <pre><code>// Định hướng nhập ký tự an toàn</code></pre></h3>
+    <label class="option"><input type="radio" name="q150" value="A"> flush();</label>
+    <label class="option"><input type="radio" name="q150" value="B"> fflush(stdin);</label>
+    <label class="option"><input type="radio" name="q150" value="C"> clear(stdin);</label>
+    <label class="option"><input type="radio" name="q150" value="D"> system("cls");</label>
+</div>
 
 <div id="result"></div>
 
